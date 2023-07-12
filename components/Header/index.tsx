@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-
+import "./index.css";
 const Header = () => {
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -35,6 +35,24 @@ const Header = () => {
     }
   };
 
+  const swiftUpElements = document.querySelectorAll(".swift-up-text");
+
+  swiftUpElements.forEach((elem) => {
+    const words = elem.textContent.split(" ");
+    elem.innerHTML = "";
+
+    words.forEach((el, index) => {
+      words[index] = `<span><i>${words[index]}</i></span>`;
+    });
+
+    elem.innerHTML = words.join(" ");
+
+    const children = document.querySelectorAll("span > i");
+    children.forEach((node, index) => {
+      // node.style.animationDelay = `${index * .2}s`;
+    });
+  });
+
   return (
     <>
       <header
@@ -49,8 +67,8 @@ const Header = () => {
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full test-xl ${
-                  sticky ? "py-5 lg:py-2 text-xl" : "py-8"
+                className={`header-logo test-xl block w-full ${
+                  sticky ? "py- lg:py- text-xl" : "py-"
                 } `}
               >
                 {/* <Image
@@ -67,16 +85,18 @@ const Header = () => {
                   height={30}
                   className="hidden w-full dark:block"
                 /> */}
-                Alancesec.com
+                <div className="container">
+                  <h1 className="swift-up-text m-3">AlanceSec.com</h1>
+                </div>
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between px-4">
-              <div>
+            <div className="flex  flex-row items-center justify-center gap-24">
+              <div className="">
                 <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
-                  className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+                  className="px- absolute right-9 top-1/2 block translate-y-[-50%] rounded-lg py-[px] ring-black focus:ring-2 lg:hidden"
                 >
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
@@ -150,7 +170,8 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+
+              <div className="flex items-center justify-end  lg:pr-0">
                 {/* <Link
                   href="/signin"
                   className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block"

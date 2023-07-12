@@ -12,16 +12,19 @@ const Video = () => {
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
-        <SectionTitle
+       <div data-aos="flip-up">
+       <SectionTitle
           title="WHY CHOOSE US ?"
           paragraph="who specialize in security solutions. With years of industry experience, we possess in-depth knowledge of the latest security trends, emerging threats, and cutting-edge technologies. Our expertise allows us to deliver comprehensive and tailored security solutions to meet your specific needs."
           center
           mb="80px"
         />
+       </div>
 
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div
+            data-aos="flip-up"
               className="wow fadeInUp mx-auto max-w-[770px] overflow-hidden rounded-md"
               data-wow-delay=".15s"
             >

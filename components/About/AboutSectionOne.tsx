@@ -60,7 +60,7 @@ const AboutSectionOne = () => {
                 data-wow-delay=".2s"
               >
                 <Image
-                  src="/images/about/Webapp1.webp"
+                  src="/images/about/websec.gif"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"
@@ -77,7 +77,7 @@ const AboutSectionOne = () => {
                 data-aos="flip-left"
               >
                 <Image
-                  src="/images/about/networkVAPT-768x628.png"
+                  src="/images/about/net.gif"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"
@@ -160,7 +160,7 @@ const AboutSectionOne = () => {
                 data-aos="flip-left"
               >
                 <Image
-                  src="/images/about/Mobile_vapt-768x569.jpg"
+                  src="/images/about/appsec.gif"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"
@@ -177,7 +177,7 @@ const AboutSectionOne = () => {
                 data-aos="flip-left"
               >
                 <Image
-                  src="/images/about/red-teaming.jpg"
+                  src="/images/about/redteam.gif"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"
@@ -259,7 +259,7 @@ const AboutSectionOne = () => {
                 data-aos="flip-left"
               >
                 <Image
-                  src="/images/about/1720.jpg"
+                  src="/images/about/appdev.gif"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"
@@ -276,7 +276,7 @@ const AboutSectionOne = () => {
                 data-aos="flip-left"
               >
                 <Image
-                  src="/images/about/4380747.jpg"
+                  src="/images/about/webdev.gif"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"

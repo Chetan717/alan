@@ -25,8 +25,8 @@ const Copt = () => {
         </h1>
 
         <div className="container">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
+          <div className="-mx-4 flex  items-center justify-center">
+            {/* <div className="w-full px-4 lg:w-1/2">
               <div
                 data-aos="flip-up"
                 className="wow fadeInUp relative mx-auto mb-12 aspect-[25/20] max-w-[500px] text-center lg:m-0"
@@ -39,13 +39,10 @@ const Copt = () => {
                   className="rounded-[30px]"
                 />
               </div>
-            </div>
+            </div> */}
 
             <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
-              <h1 className="m-5 p-2  text-center font-bold">
-                {" "}
-                Course Content 📋
-              </h1>
+              <h1 className="m-5 p-2  text-center font-bold"> Content📋</h1>
               <div
                 className="wow fadeInUp mb-12  lg:mb-0 lg:max-w-[570px]"
                 data-wow-delay=".15s"
@@ -130,10 +127,10 @@ const Copt = () => {
             </div>
 
             <Link
-              href="/contact"
+              href="tel:+1234567890"
               className="ring-indigo-300 hover:bg-indigo-600 active:bg-indigo-700 inline-block rounded-lg bg-primary px-8 py-3 text-center text-sm font-semibold text-white outline-none transition duration-100 focus-visible:ring md:text-base"
             >
-              Start now
+              Buy Now
             </Link>
           </div>
         </div>

@@ -36,8 +36,8 @@ const Coeh = () => {
         </h1>
 
         <div className="container">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 lg:w-1/2">
+          <div className="-mx-4 flex justify-center items-center">
+            {/* <div className="w-full px-4 lg:w-1/2">
               <div
                 className="wow fadeInUp relative mx-auto mb-12 aspect-[25/20] max-w-[500px] text-center lg:m-0"
                 data-wow-delay=".15s"
@@ -50,12 +50,12 @@ const Coeh = () => {
                   className="rounded-[30px]"
                 />
               </div>
-            </div>
+            </div> */}
 
             <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <h1 className="m-5 p-2  text-center font-bold">
                 {" "}
-                Course Content 📋
+              Content📋
               </h1>
               <div
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
