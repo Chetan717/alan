@@ -19,13 +19,9 @@ const Features = () => {
           </div>
           <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
             {featuresData.map((feature) => (
-            <div data-aos="flip-up">
-                <SingleFeature
-                
-                key={feature.id}
-                feature={feature}
-              />
-            </div>
+              <div key={feature.id} data-aos="flip-up">
+                <SingleFeature key={feature.id} feature={feature} />
+              </div>
             ))}
           </div>
         </div>
