@@ -87,7 +87,7 @@ const Header = () => {
                 /> */}
 
                 <h1 className="m-3 text-xl font-bold text-white">
-                  AlanceSec.com
+                  Alance<span className="text-blue-500">S</span>ec.com
                 </h1>
               </Link>
             </div>
