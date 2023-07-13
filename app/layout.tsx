@@ -5,23 +5,14 @@ import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
-import { useEffect } from "react";
-import AOS from "aos";
 
-import "aos/dist/aos.css";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  useEffect(() => {
-    AOS.init({
-      easing: "ease-out-cubic",
 
-      offset: 200,
-    });
-  }, []);
   return (
     <html suppressHydrationWarning lang="en">
     

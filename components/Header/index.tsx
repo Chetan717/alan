@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
-import "./index.css";
+// import "./index.css";
 const Header = () => {
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -35,23 +35,23 @@ const Header = () => {
     }
   };
 
-  const swiftUpElements = document.querySelectorAll(".swift-up-text");
+  // const swiftUpElements = document.querySelectorAll(".swift-up-text");
 
-  swiftUpElements.forEach((elem) => {
-    const words = elem.textContent.split(" ");
-    elem.innerHTML = "";
+  // swiftUpElements.forEach((elem) => {
+  //   const words = elem.textContent.split(" ");
+  //   elem.innerHTML = "";
 
-    words.forEach((el, index) => {
-      words[index] = `<span><i>${words[index]}</i></span>`;
-    });
+  //   words.forEach((el, index) => {
+  //     words[index] = `<span><i>${words[index]}</i></span>`;
+  //   });
 
-    elem.innerHTML = words.join(" ");
+  //   elem.innerHTML = words.join(" ");
 
-    const children = document.querySelectorAll("span > i");
-    children.forEach((node, index) => {
-      // node.style.animationDelay = `${index * .2}s`;
-    });
-  });
+  //   const children = document.querySelectorAll("span > i");
+  //   children.forEach((node, index) => {
+  //     // node.style.animationDelay = `${index * .2}s`;
+  //   });
+  // });
 
   return (
     <>
@@ -85,9 +85,10 @@ const Header = () => {
                   height={30}
                   className="hidden w-full dark:block"
                 /> */}
-                <div className="container">
-                  <h1 className="swift-up-text m-3">AlanceSec.com</h1>
-                </div>
+
+                <h1 className="m-3 text-xl font-bold text-white">
+                  AlanceSec.com
+                </h1>
               </Link>
             </div>
             <div className="flex  flex-row items-center justify-center gap-24">
