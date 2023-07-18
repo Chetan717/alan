@@ -21,7 +21,10 @@ const AboutSectionOne = () => {
     <section id="about" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
         <div className="flex flex-col gap-[100px] border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex  flex-wrap items-center">
+          <div
+            id="wvapt"
+            className="-mx-4 flex flex-wrap items-center justify-center"
+          >
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Web Application VAPT"
@@ -35,25 +38,25 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Injection flaws" />
-                    <List text="Broken authentication and session management issues" />
-                    <List text="Sensitive Data Exposure" />
-                    <List text="Cross site request forgery" />
-                    <List text="Security misconfiguration issues" />
+                    <List text="Injection attacks (SQL, OS, etc.): Exploiting vulnerabilities that allow malicious code injection" />
+                    <List text="Broken authentication and session management: Flaws in user authentication and session handling" />
+                    <List text="Sensitive data exposure: Improper protection of sensitive information" />
+                    <List text="Cross-site request forgery (CSRF): Forging unauthorized requests on behalf of users" />
+                    <List text="Security misconfigurations: Incorrectly configured security settings" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Cross-Site Scripting" />
-                    <List text="Using Components with Known Vulnerabilities" />
-                    <List text="XML External Entities (XXE)" />
-                    <List text="Server Site Request Forgery" />
-                    <List text="Insufficient logging and Monitoring" />
+                    <List text="Cross-site scripting (XSS): Injecting malicious scripts into web pages viewed by users" />
+                    <List text="Using components with known vulnerabilities: Integrating outdated or vulnerable software components" />
+                    <List text="XML external entity (XXE) attacks: Exploiting XML parsing vulnerabilities" />
+                    <List text="Server-side request forgery (SSRF): Making a server initiate malicious requests" />
+                    <List text="Insufficient logging and monitoring: Lack of proper logging and monitoring mechanisms" />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
+            {/* <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <div
                 data-aos="flip-left"
                 className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[700px] lg:mr-0"
@@ -66,11 +69,14 @@ const AboutSectionOne = () => {
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
+          <div
+            id="net"
+            className="-mx-4 flex flex-wrap items-center justify-center"
+          >
+            {/* <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <div
                 className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[700px] lg:mr-0"
                 data-wow-delay=".2s"
@@ -83,7 +89,7 @@ const AboutSectionOne = () => {
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"
                 />
               </div>
-            </div>
+            </div> */}
 
             <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <div className="mt-5">
@@ -101,33 +107,35 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Network reconnaissance: First phase of testing for an external attacker" />
-                    <List text="Mail server testing: Thoroughly testing mail servers as potential attack targets" />
-                    <List text="Testing the mail server for open relay" />
-                    <List text="Unpatched SMTP servers" />
-                    <List text="Presence of default IDs" />
+                    <List text="Phishing attacks: Targeted emails or messages to trick users into revealing sensitive information" />
+                    <List text="Malware and ransomware: Malicious software designed to disrupt or gain unauthorized access to systems" />
+                    <List text="Data breaches: Unauthorized access to sensitive data leading to its exposure or theft" />
+                    <List text="Social engineering: Manipulating individuals to disclose confidential information" />
+                    <List text="Insider threats: Risks posed by employees or individuals with authorized access" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Web-based email access and vulnerabilities" />
-                    <List text="Identification of services: Determining the services associated with open ports" />
-                    <List text="Premium quality" />
-                    <List text="Network Security & Defence" />
-                    <List text="Logging And Monitoring Risks & threats." />
+                    <List text="Cloud security risks: Concerns related to data stored and accessed from cloud platforms" />
+                    <List text="IoT vulnerabilities: Security weaknesses in connected devices and networks" />
+                    <List text="Zero-day exploits: Exploiting unknown vulnerabilities before they are patched" />
+                    <List text="Advanced persistent threats (APTs): Sophisticated and prolonged attacks by skilled adversaries" />
+                    <List text="Mobile security risks: Security challenges in mobile devices and apps" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="-mx-4 flex flex-wrap items-center">
+          <div
+            id="mvapt"
+            className="-mx-4 flex flex-wrap items-center justify-center"
+          >
             <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Mobile Application VAPT"
                 paragraph="At AlanceSec, we make sure that your app is secured and have no cyber security related issues. Tests are conducted through various modes, automated scanning with the help of tools and manual penetration testing."
                 mb="44px"
               />
-
               <div
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
                 data-wow-delay=".15s"
@@ -135,24 +143,24 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text=" Improper platform usage" />
-                    <List text=" Insecure data storage" />
-                    <List text=" Insecure communication" />
-                    <List text=" Insecure authentication" />
-                    <List text=" Insufficient cryptography" />
+                    <List text="Improper platform usage: Incorrectly utilizing platform-specific security features" />
+                    <List text="Insecure data storage: Storing sensitive data without proper encryption or protection" />
+                    <List text="Insecure communication: Transmitting data over insecure channels or protocols" />
+                    <List text="Insecure authentication: Weak or vulnerable authentication mechanisms" />
+                    <List text="Insufficient cryptography: Weak encryption or inadequate cryptographic practices" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text=" Insecure authorization" />
-                    <List text=" Poor code quality" />
-                    <List text=" Code tampering" />
-                    <List text=" Reverse engineering" />
-                    <List text=" Extraneous functionality" />
+                    <List text="Insecure authorization: Improper or flawed authorization mechanisms" />
+                    <List text="Poor code quality: Vulnerabilities introduced due to coding errors or lack of secure coding practices" />
+                    <List text="Code tampering: Unauthorized modification of app's code or resources" />
+                    <List text="Reverse engineering: Extracting sensitive information or source code from the app" />
+                    <List text="Extraneous functionality: Including unnecessary or risky features that increase the attack surface" />
                   </div>
                 </div>
               </div>
             </div>
-
+            {/* 
             <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <div
                 className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[700px] lg:mr-0"
@@ -166,11 +174,14 @@ const AboutSectionOne = () => {
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
+          <div
+            id="red"
+            className="-mx-4 flex  flex-wrap items-center justify-center"
+          >
+            {/* <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <div
                 className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[700px] lg:mr-0"
                 data-wow-delay=".2s"
@@ -183,7 +194,7 @@ const AboutSectionOne = () => {
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"
                 />
               </div>
-            </div>
+            </div> */}
 
             <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <div className="mt-5">
@@ -220,7 +231,10 @@ const AboutSectionOne = () => {
           </div>
 
           {/* ///////////////////////////////////// */}
-          <div className="-mx-4 flex flex-wrap  items-center">
+          <div
+            id="mad"
+            className="-mx-4 flex flex-wrap items-center  justify-center"
+          >
             <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Mobile Application Devlopment"
@@ -235,24 +249,24 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Custom mobile app development" />
-                    <List text="iOS app development" />
-                    <List text="Android app development" />
-                    <List text="Hybrid app development (React Native, Flutter)" />
+                    <List text="Native mobile app development (iOS and Android)" />
+                    <List text="Cross-platform app development (React Native, Flutter)" />
+                    <List text="Progressive Web App (PWA) development" />
                     <List text="UI/UX design for mobile apps" />
+                    <List text="Mobile app consulting and strategy" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                     <List text="App wireframing and prototyping" />
                     <List text="App testing and quality assurance" />
-                    <List text="App deployment and maintenance" />
-                    <List text="Integration with third-party APIs" />
-                    <List text="App performance optimization" />
+                    <List text="App deployment to app stores (Google Play Store, Apple App Store)" />
+                    <List text="Integration with third-party APIs and services" />
+                    <List text="Mobile app performance optimization and tuning" />
                   </div>
                 </div>
               </div>
             </div>
-            <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
+            {/* <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <div
                 className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[700px] lg:mr-0"
                 data-wow-delay=".2s"
@@ -265,11 +279,14 @@ const AboutSectionOne = () => {
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
 
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
+          <div
+            id="wad"
+            className="-mx-4 flex flex-wrap items-center justify-center"
+          >
+            {/* <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <div
                 className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[700px] lg:mr-0"
                 data-wow-delay=".2s"
@@ -282,7 +299,7 @@ const AboutSectionOne = () => {
                   className="mx-auto max-w-full rounded-[30px] lg:mr-0"
                 />
               </div>
-            </div>
+            </div> */}
             <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <div className="mt-5">
                 <SectionTitle

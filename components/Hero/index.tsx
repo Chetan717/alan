@@ -15,7 +15,7 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1  className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-              We Secure You Digitally !
+              We Secure You Digitally!
                 </h1>
                 <p  className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
                 Our expert team of cybersecurity professionals understands the ever-growing risks associated with the digital world. With our cutting-edge technology and industry-leading practices, we offer a robust defense against cyber threats, safeguarding your data, privacy, and online presence.

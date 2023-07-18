@@ -6,13 +6,14 @@ const news = () => {
 
     "/images/news/n5.jpg",
     "/images/news/n6.jpg",
+    "/images/news/n7.jpeg",
+    "/images/news/n8.jpg",
   ];
 
   return (
     <>
-   
-      <div className="m-5 flex flex-col gap-10 items-center justify-center pt-32">
-      <h1 className="text-center font-bold text-xl">News</h1>
+      <div className="m-5 flex flex-col items-center justify-center gap-10 pt-32">
+        <h1 className="text-center text-xl font-bold">News</h1>
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           {Paths?.map((key) => {
             return (

@@ -23,24 +23,28 @@ const menuData: Menu[] = [
     id: 3,
     title: "Courses",
     newTab: false,
-    submenu: [{
-      id: 31,
+    submenu: [
+      {
+        id: 31,
         title: "Certified Ethical Hacker(COEH)",
         path: "/coeh",
         newTab: false,
-    },{
-      id: 32,
+      },
+      {
+        id: 32,
         title: "Certified Penetretion Tester (COPT)",
         path: "/copt",
         newTab: false,
-    },{
-      id: 33,
+      },
+      {
+        id: 33,
         title: "Full Stack Devloper (FSD)",
         path: "/fsd",
         newTab: false,
-    }]
+      },
+    ],
   },
- 
+
   {
     id: 4,
     title: "Services",
@@ -49,38 +53,45 @@ const menuData: Menu[] = [
       {
         id: 41,
         title: "Web Application VAPT",
-        path: "/service",
+        path: "/service/",
         newTab: false,
+        ref: "/#wvapt",
       },
+
       {
         id: 42,
         title: "Network VAPT",
-        path: "/service",
+        path: "/service/#net",
         newTab: false,
+        ref: "/#net",
       },
       {
         id: 43,
         title: "Mobile Application VAPT",
-        path: "/service",
+        path: "/service/#mvapt",
         newTab: false,
+        ref: "/#mvapt",
       },
       {
         id: 44,
         title: "Red Teaming",
-        path: "/service",
+        path: "/service/#red",
         newTab: false,
+        ref: "/#red",
       },
       {
         id: 45,
         title: "Web app Devlopment",
-        path: "/service",
+        path: "/service/#wad",
         newTab: false,
+        ref: "/#wad",
       },
       {
         id: 46,
         title: "Mobile Application Devlopment ",
-        path: "/service",
+        path: "/service/#mad",
         newTab: false,
+        ref: "/#mad",
       },
       // {
       //   id: 47,
@@ -103,7 +114,7 @@ const menuData: Menu[] = [
     newTab: false,
   },
   {
-    id:6,
+    id: 6,
     title: "News",
     path: "/News",
     newTab: false,
