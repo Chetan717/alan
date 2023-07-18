@@ -15,9 +15,9 @@ const Footer = () => {
                 <Link href="/" className="mb-8 inline-block">
                   <h1>Alancesec.com</h1>
                 </Link>
-               
+
                 <p className="mb-10 text-base font-medium leading-relaxed text-body-color">
-                  AlanceSec is India's leading Cyber Security service provider.
+                  AlanceSec is Indias leading Cyber Security service provider.
                   These days every business is going online, either through
                   website or through mobile app or both. It becomes important to
                   keep it secured, but not many knows how to keep it secure.
@@ -125,7 +125,6 @@ const Footer = () => {
           </div>
         </div>
 
-   
         <div className="absolute left-0 bottom-24 z-[-1]">
           <svg
             width="79"

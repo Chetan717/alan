@@ -49,8 +49,10 @@ const Brands = () => {
                 <>
                   <div className="flex flex-col items-center">
                     <div className="bg-gray-100 mb-2 h-24 w-24 overflow-hidden rounded-full shadow-lg md:mb-4 md:h-32 md:w-32">
-                      <img
+                      <Image
                         src={itm?.image}
+                        width={90}
+                        height={0}
                         loading="lazy"
                         alt="Photo by Radu Florin"
                         className="h-full w-full object-cover object-center"
