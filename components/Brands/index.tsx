@@ -11,7 +11,7 @@ const brandsData: Brand[] = [
   {
     id: 2,
     name: "Sachin Kadlag",
-    position: "Chief Technology officer",
+    position: "Chief Technology officers",
     image: "/images/brands/sach2.jpg",
   },
   {
