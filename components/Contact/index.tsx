@@ -22,7 +22,7 @@ const Contact = () => {
                 Need Help? Open to contact us
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Our support team will get back to you ASAP via email.
+                Our support team will get back to you email.
               </p>
               <form action="https://formspree.io/f/xrgwgrrb" method="POST">
                 <div className="-mx-4 flex flex-wrap">

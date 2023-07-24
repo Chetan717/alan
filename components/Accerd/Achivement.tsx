@@ -4,13 +4,16 @@ const Achivement = () => {
     "/images/achieve/ach1.jpg",
     "/images/achieve/ac3.jpg",
     "/images/achieve/ac5.jpg",
-    "/images/achieve/ac4.jpg",
+    "/images/achieve/ac10.jpg",
 
+    "/images/achieve/ac11.jpg",
+    "/images/achieve/ac6.jpg",
     "/images/achieve/ac9.jpg",
     "/images/achieve/ac7.jpg",
+
+    "/images/achieve/ac4.jpg",
+    "/images/achieve/ac12.jpg",
     "/images/achieve/ac8.jpg",
-    "/images/achieve/ac6.jpg",
-    "/images/achieve/ac10.jpg",
   ];
 
   return (
