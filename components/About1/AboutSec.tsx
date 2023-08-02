@@ -68,7 +68,7 @@ const AboutSection = () => {
                   data-aos="flip-right"
                 >
                   <Image
-                    src="/images/about/mis.jpeg"
+                    src="/images/about/mis.jpg"
                     alt="about-image"
                     fill
                     className="mx-auto max-w-full rounded-[30px] lg:mr-0"

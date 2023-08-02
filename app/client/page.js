@@ -27,7 +27,7 @@ const ClientSection = () => {
             <div className="-mx-4 flex  flex-wrap items-center">
               <div data-aos="fade-right" className="w-full px-4 lg:w-1/2">
                 <SectionTitle
-                  title="Construction Sectior"
+                  title="Construction Sector"
                   paragraph=""
                 
                   mb="44px"

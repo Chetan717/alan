@@ -11,7 +11,7 @@ const brandsData: Brand[] = [
   {
     id: 2,
     name: "Sachin Kadlag",
-    position: "Chief Technology officers",
+    position: "Chief Technology officer",
     image: "/images/brands/sach2.jpg",
   },
   {
@@ -39,7 +39,12 @@ const Brands = () => {
             </h2>
 
             <p className="text-gray-500 mx-auto max-w-screen-md text-center md:text-lg">
-            At Alancesec, we take pride in our exceptional team of talented individuals who work passionately to deliver outstanding results. With diverse backgrounds and expertise, our team is dedicated to providing the highest level of service and innovation to our valued clients. Allow us to introduce the members who make up our powerhouse team
+              At Alancesec, we take pride in our exceptional team of talented
+              individuals who work passionately to deliver outstanding results.
+              With diverse backgrounds and expertise, our team is dedicated to
+              providing the highest level of service and innovation to our
+              valued clients. Allow us to introduce the members who make up our
+              powerhouse team
             </p>
           </div>
 
@@ -61,10 +66,10 @@ const Brands = () => {
 
                     <div>
                       <div className="text-indigo-500 text-center font-bold md:text-lg">
-                       {itm?.name}
+                        {itm?.name}
                       </div>
                       <p className="text-gray-500 mb-3 text-center text-sm md:mb-4 md:text-base">
-                     {itm?.position}
+                        {itm?.position}
                       </p>
                     </div>
                   </div>
@@ -74,7 +79,6 @@ const Brands = () => {
           </div>
         </div>
       </div>
-      ;
     </section>
   );
 };

@@ -13,9 +13,7 @@ const Footer = () => {
           <div className="-mx-4 mb-5 flex flex-col lg:flex-row">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
-                  <h1>Alancesec.com</h1>
-                </Link>
+               
 
                 <p className="mb-10 text-base font-medium leading-relaxed text-body-color">
                   AlanceSec is Indias leading Cyber Security service provider.
@@ -74,7 +72,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="/about"
+                      href="/about1"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
                     >
                       {" "}

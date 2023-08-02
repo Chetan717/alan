@@ -5,6 +5,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
 
   return (
     <section
@@ -38,6 +39,7 @@ const Contact = () => {
                         type="text"
                         placeholder="Enter your name"
                         value={name}
+                        name="name"
                         onChange={(e) => setName(e.target.value)}
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                         required
@@ -56,7 +58,28 @@ const Contact = () => {
                         type="email"
                         placeholder="Enter your email"
                         value={email}
+                        name="email"
                         onChange={(e) => setEmail(e.target.value)}
+                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="w-full px-4 md:w-1/2">
+                    <div className="mb-8">
+                      <label
+                        htmlFor="email"
+                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                      >
+                         Mobile No
+                      </label>
+                      <input
+                        type="number"
+                        placeholder="phone .."
+                        value={phone}
+                        maxLength={12}
+                        name="phone"
+                        onChange={(e) => setPhone(e.target.value)}
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                         required
                       />
