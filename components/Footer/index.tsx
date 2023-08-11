@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import int from "./asset/icons8-instagram.svg";
 import fac from "./asset/icons8-facebook.svg";
+import iso from "../../images/Iso.png"
 const Footer = () => {
   return (
     <>
@@ -11,10 +12,12 @@ const Footer = () => {
       >
         <div className="container">
           <div className="-mx-4 mb-5 flex flex-col lg:flex-row">
+         
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
+            <Image alt="facebook" className="mb-4" src={iso} height={0} width={100} />
               <div className="mb-12 max-w-[360px] lg:mb-16">
                
-
+              
                 <p className="mb-10 text-base font-medium leading-relaxed text-body-color">
                   AlanceSec is Indias leading Cyber Security service provider.
                   These days every business is going online, either through
@@ -38,14 +41,14 @@ const Footer = () => {
                   </a>
 
                   <a
-                    href="https://www.instagram.com/onkarsonawane31/"
+                    href="https://www.instagram.com/alancesec/?hl=en"
                     aria-label="social-link"
                     className="mr-6 text-[#CED3F6] hover:text-primary"
                   >
                     <Image alt="instagram" src={int} height={0} width={20} />
                   </a>
                   <a
-                    href="https://www.instagram.com/onkarsonawane31/"
+                    href="https://m.facebook.com/alancesec/"
                     aria-label="social-link"
                     className="mr-6 text-[#CED3F6] hover:text-primary"
                   >

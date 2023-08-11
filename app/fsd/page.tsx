@@ -167,7 +167,7 @@ const fsdPage = () => {
             </div>
 
             <Link
-              href="tel:+1234567890"
+              href="tel:9322670616"
               className="ring-indigo-300 hover:bg-indigo-600 active:bg-indigo-700 inline-block rounded-lg bg-primary px-8 py-3 text-center text-sm font-semibold text-white outline-none transition duration-100 focus-visible:ring md:text-base"
             >
               Buy Now

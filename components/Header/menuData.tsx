@@ -25,14 +25,8 @@ const menuData: Menu[] = [
     newTab: false,
     submenu: [
       {
-        id: 31,
-        title: "Certified Ethical Hacker(COEH)",
-        path: "/coeh",
-        newTab: false,
-      },
-      {
         id: 32,
-        title: "Certified Penetretion Tester (COPT)",
+        title: "Masters In Ethical Hacking and Penetration Testing (M-EHPT)",
         path: "/copt",
         newTab: false,
       },
