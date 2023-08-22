@@ -41,7 +41,7 @@ const Copt = () => {
               </div>
             </div> */}
 
-            <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
+            {/* <div data-aos="fade-up" className="w-full px-4 lg:w-1/2">
               <h1 className="m-5 p-2  text-center font-bold"> Content📋</h1>
               <div
                 className="wow fadeInUp mb-12  lg:mb-0 lg:max-w-[570px]"
@@ -75,7 +75,7 @@ const Copt = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* <SectionTitle
               title=""
