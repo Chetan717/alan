@@ -27,7 +27,7 @@ const menuData: Menu[] = [
       {
         id: 32,
         title: "Masters In Ethical Hacking and Penetration Testing (M-EHPT)",
-        path: "/copt",
+        path: "/mehpt",
         newTab: false,
       },
       {
